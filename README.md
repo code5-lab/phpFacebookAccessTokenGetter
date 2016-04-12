@@ -42,7 +42,7 @@ e.g. post to user's first managed page:
 
 ## License
 
-  This project is licensed under the GNU General Public License v2.0 - see the LICENSE.md file for details
+  This project is licensed under the GNU General Public License v2.0 - see the [LICENSE](https://github.com/componto/phpFacebookAccessTokenGetter/blob/master/LICENSE) file for details
 
 
 
