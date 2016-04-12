@@ -20,7 +20,7 @@ e.g getting logged user's info:
 
 <?php
   $response = $fb->get('/me', $accessToken); 
->
+?>
 
 e.g. getting user's managed pages(specifically page token and page id for the first page on the retrieved list):
 
@@ -29,7 +29,7 @@ e.g. getting user's managed pages(specifically page token and page id for the fi
   
   $pageToken = $response->getDecodedBody()['data'][0]["access_token"];  
   $pageId = $response->getDecodedBody()['data'][0]["id"];
->
+?>
 
 e.g. post to user's first managed page:
 
@@ -37,7 +37,7 @@ e.g. post to user's first managed page:
   $responseFeed = $fb->post("/{$pageId}/feed", array(
             'message' => 'message posted through app!!'
         ), $pageToken);
->
+?>
 
 ## License
 
