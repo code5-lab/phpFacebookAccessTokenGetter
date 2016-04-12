@@ -1,17 +1,109 @@
-<form action="facebookLogin.php" method="post">
-    <p>
-        AppID:
-        <input type="text" name="appID" />
-    </p>
-    <p>
-        APP Secret:
-        <input type="text" name="appSecret" />
-    </p>
-    <p>
-        Default Version:
-        <input type="text" name="defVersion"/>
-    </p>
-    <p>
-        <input type="submit" />
-    </p>
-</form>
+<html>
+
+<head>
+    <title>phpFacebookAccessTokenGetter</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<header>
+    <h1>
+        phpFacebookAccessTokenGetter
+    </h1>
+    <h3>
+        Facebook access_token and page_id generator
+    </h3>
+</header>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="appForm">
+    <div class="container">
+
+        <form action="facebookLogin.php" method="post">
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <label for="appId">Insert app's id</label>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">App id: </span>
+                    <input type="text" class="form-control" name="appID" id="appId" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <label for="appSecret">Insert app's secret</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2">App secret: </span>
+                <input type="text" class="form-control" name="appSecret" id="appSecret" aria-describedby="basic-addon2">
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <label for="defaultGraphVersion">Insert app's id</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">Default Graph Version: </span>
+                <input type="text" class="form-control" name = "defVersion" id="defaultGraphVersion" aria-describedby="basic-addon3">
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+        </form>
+
+<!--
+    <div class ="container">
+        <form action="facebookLogin.php" method="post">
+            <p>
+                AppID:
+            </p>
+
+            <input type="text" name="appID" />
+
+            <p>
+                APP Secret:
+            </p>
+
+                <input type="text" name="appSecret" />
+
+            <p>
+                Default Version:
+            </p>
+                <input type="text" name="defVersion"/>
+
+            <p>
+                <input type="submit" />
+            </p>
+        </form>
+</div>
+-->
+</div>
+
+
+</body>
+</html>
