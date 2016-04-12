@@ -8,11 +8,13 @@ Facebook access_token and page_id generator.
 
   To install via composer add the following lines to "composer.json" file at the root of your project and run "composer install":
 
+```
   {
     "require" : {
       "facebook/php-sdk-v4" : "~5.0"
     }
   }
+```
 
 ## Usage
 
