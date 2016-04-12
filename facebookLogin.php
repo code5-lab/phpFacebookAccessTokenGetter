@@ -61,7 +61,7 @@ if(isset($_SESSION['fb_access_token'])) {
 if(isset($accessToken)) {
     // Logged in!
 
-    echo 'Logged in! Making get(/me) request';
+    echo 'Logged in! Making get(/me/accounts) request';
     $_SESSION['fb_access_token'] = (string) $accessToken;
 
     try {
