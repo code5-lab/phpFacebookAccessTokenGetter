@@ -38,7 +38,7 @@ e.g. post to user's first managed page:
             'message' => 'message posted through app!!'
         ), $pageToken);
       
-      ```
+```
 
 ## License
 
