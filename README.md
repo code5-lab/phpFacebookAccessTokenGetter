@@ -1,5 +1,5 @@
 # phpFacebookAccessTokenGetter
-  Facebook access_token and page_id generator.
+Facebook access_token and page_id generator.
   
   Firstly you will be prompted to type app_id, app_secret and default graph version. After, you will be redirected to Facebook login page. Succeeding it will query Facebook's graph API for logged in user's managed page list.  
 
