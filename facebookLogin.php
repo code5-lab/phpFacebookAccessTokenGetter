@@ -72,8 +72,11 @@ if(isset($accessToken)) {
         //$pageId = $response->getDecodedBody()['data'][0]["id"];                 // id of the first page
 
         foreach($response->getDecodedBody()['data'] as $pageRetrieved){           // for each page retrieved prints
-            echo '<pre>';                                                         //id and token
+            echo '<pre>';
+                print_r("Page name: ".$pageRetrieved["name"]);
+                echo "<br>";                                                        //name, id and token
                 print_r("Page id: ".$pageRetrieved["id"]);
+                echo "<br>";                                                        //name, id and token
                 print_r("Page token: ".$pageRetrieved["access_token"]);
             echo "<br>";
             echo '</pre>';
